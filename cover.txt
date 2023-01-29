@@ -1,0 +1,39 @@
+URL: http://mersey.cs.nott.ac.uk/~psxke1/
+
+Files and directories:
+
+InstallationFiles
+--add_account.php
+--add_fine.php
+--add_Incident.php
+--add_owner.php
+--add_owner_by_licence.php
+--add_vehicle_by_ownerID.php
+--add_vehicles.php
+--change_password.php
+--db.inc.php
+--edit_Incident.php
+--functions.php
+--index.php
+--main.php
+--reset.php
+--search_people.php
+--search_vehicles.php
+--view_Incident.php
+--style.css
+--script.js
+--Database.sql
+--Police.jpg
+--Police-blurred.jpg
+--bootstrap-css
+Technical_Guide
+UserManual
+
+
+
+
+Login Form: https://www.youtube.com/watch?v=eeHqZeJ9Vqc&ab_channel=CodingNepal (HTML + CSS)
+tables: https://www.w3schools.com/css/css_table.asp
+tables: https://www.youtube.com/watch?v=3xRMUDC74Cw
+Enhancement: https://learn.shayhowe.com/html-css/creating-lists/
+PowerPoint master slide: https://aws.amazon.com/architecture/icons/

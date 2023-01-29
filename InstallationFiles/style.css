@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("Police.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#blurred-bg {
+  /*The plain background-image here overrides the background-image*/
+  background-image: url("Police-blurred.jpg");
+  overflow: scroll;
+}
+
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+.center form{
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 4px solid #adadad;
+  margin: 50px 0;
+}
+form .txt_field_small_margin{
+  position: relative;
+  border-bottom: 4px solid #adadad;
+  margin: 7px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field_small_margin input{
+  width: 100%;
+  padding: 0 5px;
+  height: 100%;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field_small_margin label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+
+.pass:hover{
+  text-decoration: underline;
+}
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #d96526;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #fbe9f9;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #d96526;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.change_pw {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 0;
+  color: white;
+}
+
+.homepage {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px 0;
+  color: rgb(255, 0, 0);
+}
+
+ul.list {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  list-style-type:disc;
+}
+
+.hero-image {
+  background-image: url("Police.jpg");
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid rgb(235, 18, 18);
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f68a8a;}
+
+#customers tr:hover {background-color: rgb(255, 255, 255);}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+#logout {
+  position:fixed;
+  right:10px;
+  top:5px;
+  font: bold 60px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: linear-gradient(#49708f, #293f50);
+  background: #395870;
+  color: rgb(255, 0, 0);
+}
+
+#homepage {
+  position:fixed;
+  left:10px;
+  top:5px;
+  font: bold 60px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: linear-gradient(#49708f, #293f50);
+  background: #395870;
+  color: rgb(51, 255, 0);
+}
+
+
+
+
+
+/* https://learn.shayhowe.com/html-css/creating-lists/ */
+.navigation ul {
+  font: bold 60px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  background: #395870;
+  background: linear-gradient(#49708f, #293f50);
+  border-right: 1px solid rgba(0, 0, 0, .3);
+  color: rgb(55, 233, 114);
+  padding: 0px 20px;
+  text-decoration: none;
+}
+.navigation a:hover {
+  background: #53b37b;
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
+}
+.navigation li:first-child a {
+  border-radius: 4px 0 0 4px;
+}
+.navigation li:last-child a {
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+
